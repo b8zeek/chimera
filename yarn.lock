@@ -1126,6 +1126,18 @@
   resolved "https://registry.yarnpkg.com/@nrwl/nx-win32-x64-msvc/-/nx-win32-x64-msvc-15.7.2.tgz#cb622a96c0f85c37973420c4817e383783237a84"
   integrity sha512-ARE4qGPgk+e+pSm0uPhHan5UCRtwNYc5ddVNS88NFrVoDTPm5MxYLGdvLnshWWio/Bx526FcwUMSCBWSW8HIFw==
 
+"@nrwl/react@^15.7.2":
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.7.2.tgz#6844f10114383c8c644b4564eee4131e2de2a140"
+  integrity sha512-Ox09g3RNsG2JnCfQlySbkKfpFNB1CVkTwNTlf/U0P2JWcwMxGzbWaLo2x9ZvAjGFP6Nv8FXHU+C/xwPmUvgIrA==
+  dependencies:
+    "@nrwl/devkit" "15.7.2"
+    "@nrwl/linter" "15.7.2"
+    "@nrwl/workspace" "15.7.2"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    chalk "^4.1.0"
+    minimatch "3.0.5"
+
 "@nrwl/tao@15.7.2":
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.7.2.tgz#6c9264cd815d15d02710202e5046aba3e68156db"

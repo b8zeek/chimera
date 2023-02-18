@@ -2,6 +2,7 @@ import { PageLayout } from '@basic/components'
 import styled from 'styled-components'
 
 import { Hero, Label } from '../components'
+import { Heading } from '@basic/components'
 
 export function App() {
   return (
@@ -9,6 +10,7 @@ export function App() {
       <Container>
         <Label />
         <Hero />
+        <Heading textAlign='center'>Welcome Traveler</Heading>
       </Container>
     </PageLayout>
   )

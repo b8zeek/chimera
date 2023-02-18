@@ -2,7 +2,7 @@ import { PageLayout } from '@basic/components'
 import styled from 'styled-components'
 
 import { Hero, Label } from '../components'
-import { Heading } from '@basic/components'
+import { Heading, Paragraph } from '@basic/components'
 
 export function App() {
   return (
@@ -11,6 +11,9 @@ export function App() {
         <Label />
         <Hero />
         <Heading textAlign='center'>Welcome Traveler</Heading>
+        <Paragraph width='300px' textAlign='center'>
+          My name is Mirko Basic. I am an experience technologist driving the adoption of blockchain.
+        </Paragraph>
       </Container>
     </PageLayout>
   )

@@ -1,7 +1,7 @@
-import { PageLayout } from '@basic/components';
+import { PageLayout } from '@basic/components'
 
 export function App() {
-  return <PageLayout>Welcome Basic</PageLayout>;
+  return <PageLayout>Welcome Basic</PageLayout>
 }
 
-export default App;
+export default App

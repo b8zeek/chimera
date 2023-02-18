@@ -6,6 +6,8 @@ export function Label() {
 
 const Container = styled.div`
   position: absolute;
+  top: 0;
+  left: 0;
   padding: 0 10px;
   border-radius: 0 0 5px 5px;
   line-height: 28px;

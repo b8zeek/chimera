@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { BoxShadowStyle } from '@basic/config'
+
 export function Label() {
   return <Container>Mirko Basic</Container>
 }
@@ -17,4 +19,5 @@ const Container = styled.div`
   letter-spacing: -0.05em;
   color: #ffffff;
   background-color: black;
+  ${BoxShadowStyle}
 `

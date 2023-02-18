@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 import { FontAllianceNo2 } from '../assets/fonts'
+import { BOX_SHADOW } from '../constants'
 
 export const GlobalStyle = createGlobalStyle`
   ${FontAllianceNo2}
@@ -17,4 +18,8 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     background-color: #fafafa;
   }
+`
+
+export const BoxShadowStyle = css`
+  box-shadow: ${BOX_SHADOW};
 `

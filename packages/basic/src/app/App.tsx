@@ -1,7 +1,13 @@
 import { PageLayout } from '@basic/components'
 
+import { Label } from '../components/Label'
+
 export function App() {
-  return <PageLayout>Welcome Basic</PageLayout>
+  return (
+    <PageLayout>
+      <Label />
+    </PageLayout>
+  )
 }
 
 export default App

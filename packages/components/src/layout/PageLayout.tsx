@@ -15,8 +15,10 @@ const Container = styled.div`
   width: 100%;
   max-width: ${MAX_PAGE_WIDTH};
   min-height: 100vh;
+  position: relative;
   padding: 0 20px;
   margin: 0 auto;
 
-  border: 1px solid #d36500;
+  border-left: 1px solid #d36500;
+  border-right: 1px solid #d36500;
 `

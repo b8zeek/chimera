@@ -11,7 +11,7 @@ export function App() {
         <Label />
         <Hero />
         <Heading textAlign='center'>Welcome Traveler</Heading>
-        <Paragraph width='300px' textAlign='center' marginBottom='20px'>
+        <Paragraph width='300px' fontSize='16px' textAlign='center' marginBottom='20px'>
           My name is Mirko Basic. I am an experience technologist driving the adoption of blockchain.
         </Paragraph>
         <SocialConnect />

@@ -22,7 +22,7 @@ const Container = styled.div`
   width: 180px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 `
 
 const LinkedInLogo = styled(LinkedInLogoSVG)`

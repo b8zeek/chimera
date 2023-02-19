@@ -1,7 +1,7 @@
 import { PageLayout } from '@basic/components'
 import styled from 'styled-components'
 
-import { Hero, Label, SocialConnect } from '../components'
+import { Hero, Label, MainSection, SocialConnect } from '../components'
 import { Heading, Paragraph } from '@basic/components'
 
 export function App() {
@@ -15,6 +15,7 @@ export function App() {
           My name is Mirko Basic. I am an experience technologist driving the adoption of blockchain.
         </Paragraph>
         <SocialConnect />
+        <MainSection />
       </Container>
     </PageLayout>
   )
@@ -22,7 +23,7 @@ export function App() {
 
 const Container = styled.div`
   position: relative;
-  padding: 60px 0;
+  padding: 60px 20px;
 `
 
 export default App

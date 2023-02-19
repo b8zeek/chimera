@@ -1,4 +1,5 @@
 export * from './Hero'
 export * from './Label'
 export * from './MainSection'
+export * from './POAPsSection'
 export * from './SocialConnect'

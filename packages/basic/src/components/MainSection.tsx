@@ -4,7 +4,7 @@ import { MainSectionContainer, Paragraph, SubHeading } from '@basic/components'
 
 export function MainSection() {
   return (
-    <MainSectionContainer>
+    <MainSectionContainer marginBottom='20px'>
       <SubHeading>About Me</SubHeading>
       <HL />
       <Paragraph color='#fff' textAlign='justify'>

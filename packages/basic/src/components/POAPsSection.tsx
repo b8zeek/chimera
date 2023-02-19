@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { usePOAPs } from '../hooks/usePOAPs'
+import { SubHeading } from '@basic/components'
 
 type POAP = {
   chain: string
@@ -32,14 +33,21 @@ export function POAPsSection() {
 
   return (
     <Container>
-      {data.slice(0, 6).map((poap: POAP) => (
-        <POAPToken src={poap.event.image_url} />
-      ))}
+      <SubHeading color='#000' textAlign='center'>
+        Follow my journey...
+      </SubHeading>
+      <POAPsContainer>
+        {data.slice(0, 6).map((poap: POAP) => (
+          <POAPToken src={poap.event.image_url} />
+        ))}
+      </POAPsContainer>
     </Container>
   )
 }
 
-const Container = styled.section`
+const Container = styled.section``
+
+const POAPsContainer = styled.div`
   min-height: 20px;
   padding: 10px;
   border-radius: 1000px;

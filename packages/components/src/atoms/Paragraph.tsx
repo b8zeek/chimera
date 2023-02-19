@@ -3,6 +3,7 @@ import styled from 'styled-components'
 type ParagraphProps = {
   width?: string
   textAlign?: 'center'
+  marginBottom?: string
 }
 
 export const Paragraph = styled.p<ParagraphProps>`
@@ -14,4 +15,5 @@ export const Paragraph = styled.p<ParagraphProps>`
   ${({ textAlign }) => textAlign && `text-align: ${textAlign};`}
   color: #000000;
   margin: 0 auto;
+  ${({ marginBottom }) => marginBottom && `margin-bottom: ${marginBottom};`}
 `

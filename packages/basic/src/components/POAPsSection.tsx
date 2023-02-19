@@ -38,7 +38,7 @@ export function POAPsSection() {
       </SubHeading>
       <POAPsContainer>
         {data.slice(0, 6).map((poap: POAP) => (
-          <POAPToken src={poap.event.image_url} />
+          <POAPToken key={poap.tokenId} src={poap.event.image_url} />
         ))}
       </POAPsContainer>
     </Container>

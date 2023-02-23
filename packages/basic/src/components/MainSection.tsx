@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 import { MainSectionContainer, Paragraph, SubHeading } from '@basic/components'
+import { ReactComponent as CloverSVG } from '../assets/clover.svg'
 
 export function MainSection() {
   return (
     <MainSectionContainer marginBottom='20px'>
-      <SubHeading>About Me</SubHeading>
+      <HeadingContainer>
+        <SubHeading>About Me</SubHeading>
+        <CloverSVG />
+      </HeadingContainer>
       <HL />
       <Paragraph color='#fff' textAlign='justify'>
         I LOVE what I do! I am a full-stack software engineer who takes pride in writing extremely clean, readable and
@@ -21,6 +25,13 @@ export function MainSection() {
   )
 }
 
+const HeadingContainer = styled.div`
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
 const HL = styled.hr`
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `

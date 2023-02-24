@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 type MainSectionContainerProps = {
   children?: ReactNode | ReactNode[]
@@ -7,10 +8,24 @@ type MainSectionContainerProps = {
 }
 
 export function MainSectionContainer({ children, marginBottom }: MainSectionContainerProps) {
-  return <Container marginBottom={marginBottom}>{children}</Container>
+  return (
+    <Container
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: '100px' }
+      }}
+      marginBottom={marginBottom}
+    >
+      {children}
+    </Container>
+  )
 }
 
-const Container = styled.div<{ marginBottom?: string }>`
+const Container = styled(motion.div)<{ marginBottom?: string }>`
   padding: 20px;
   border-radius: 5px;
   background: black;

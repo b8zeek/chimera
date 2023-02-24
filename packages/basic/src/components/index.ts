@@ -1,5 +1,6 @@
 export * from './Footer'
 export * from './Hero'
+export * from './ImageSection'
 export * from './Label'
 export * from './MainSection'
 export * from './POAPsSection'

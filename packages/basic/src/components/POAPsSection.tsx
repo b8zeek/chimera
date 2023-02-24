@@ -45,7 +45,9 @@ export function POAPsSection() {
   )
 }
 
-const Container = styled.section``
+const Container = styled.section`
+  margin-bottom: 40px;
+`
 
 const POAPsContainer = styled.div`
   min-height: 20px;

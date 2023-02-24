@@ -1,7 +1,7 @@
 import { PageLayout } from '@basic/components'
 import styled from 'styled-components'
 
-import { Hero, Label, MainSection, POAPsSection, SocialConnect } from '../components'
+import { Hero, Label, MainSection, POAPsSection, SocialConnect, TechStackMarquee } from '../components'
 import { Heading, Paragraph } from '@basic/components'
 
 export function App() {
@@ -16,6 +16,7 @@ export function App() {
         </Paragraph>
         <SocialConnect />
         <MainSection />
+        <TechStackMarquee />
         <POAPsSection />
       </Container>
     </PageLayout>

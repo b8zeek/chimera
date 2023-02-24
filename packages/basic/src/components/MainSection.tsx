@@ -5,7 +5,7 @@ import { ReactComponent as CloverSVG } from '../assets/clover.svg'
 
 export function MainSection() {
   return (
-    <MainSectionContainer marginBottom='20px'>
+    <MainSectionContainer marginBottom='40px'>
       <HeadingContainer>
         <SubHeading>About Me</SubHeading>
         <CloverSVG />

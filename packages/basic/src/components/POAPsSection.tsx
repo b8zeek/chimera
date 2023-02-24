@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import { usePOAPs } from '../hooks/usePOAPs'
 import { SubHeading } from '@basic/components'
@@ -37,8 +37,8 @@ export function POAPsSection() {
         Follow My Journey
       </SubHeading>
       <POAPsContainer>
-        {data.slice(0, 6).map((poap: POAP) => (
-          <POAPToken key={poap.tokenId} src={poap.event.image_url} />
+        {data.slice(0, 6).map((poap: POAP, index: number) => (
+          <POAPToken key={poap.tokenId} src={poap.event.image_url} animationDelay={index * 0.1} />
         ))}
       </POAPsContainer>
     </Container>
@@ -54,7 +54,23 @@ const POAPsContainer = styled.div`
   background-color: black;
 `
 
-const POAPToken = styled.img`
+const PopAnimation = keyframes`
+  0% {
+    scale: 1;
+  }
+
+  5% {
+    scale: 1.1;
+  }
+
+  10% {
+    scale: 1;
+  }
+`
+
+const POAPToken = styled.img<{ animationDelay: number }>`
   width: 20%;
+  animation: 3s ${PopAnimation} ease-in-out infinite;
+  animation-delay: ${({ animationDelay }) => animationDelay}s;
   margin-right: -4%;
 `

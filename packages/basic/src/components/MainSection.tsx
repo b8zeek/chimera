@@ -3,23 +3,22 @@ import styled from 'styled-components'
 import { MainSectionContainer, Paragraph, SubHeading } from '@basic/components'
 import { ReactComponent as CloverSVG } from '../assets/clover.svg'
 
-export function MainSection() {
+type MainSectionProps = {
+  heading: string
+  svg: string
+  content: string
+}
+
+export function MainSection({ heading, svg, content }: MainSectionProps) {
   return (
-    <MainSectionContainer marginBottom='40px'>
+    <MainSectionContainer marginBottom='50px'>
       <HeadingContainer>
-        <SubHeading>About Me</SubHeading>
+        <SubHeading>{heading}</SubHeading>
         <CloverSVG />
       </HeadingContainer>
       <HL />
       <Paragraph color='#fff' textAlign='justify'>
-        I LOVE what I do! I am a full-stack software engineer who takes pride in writing extremely clean, readable and
-        minimal code and focuses on crafting future-proof web applications which are performant and easy to maintain. I
-        value well-organized project structure, thoughtful interactions and innovative ideas. Really passionate about
-        technology, I'm interested in the entire spectrum but my go-to technology is React. I devoted a lot of time
-        getting to know it in-depth together with its whole ecosystem and I enjoy using it the most since it is
-        unopinionated and everyone has a chance to adapt it to their own needs and express themselves in their own way.
-        My abundant energy fuels me in the pursuit of many interests, I enjoy using my obsessive attention to detail, my
-        unequivocal love for improvement and my mission-driven work ethic to continuously get better.
+        {content}
       </Paragraph>
     </MainSectionContainer>
   )

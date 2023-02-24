@@ -20,6 +20,7 @@ export const usePOAPs = () => {
 
   return useQuery({
     queryKey: ['POAPs'],
-    queryFn: getPOAPs
+    queryFn: getPOAPs,
+    refetchOnWindowFocus: false
   })
 }

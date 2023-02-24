@@ -34,7 +34,7 @@ export function POAPsSection() {
   return (
     <Container>
       <SubHeading color='#000' textAlign='center'>
-        Follow my journey...
+        Follow My Journey
       </SubHeading>
       <POAPsContainer>
         {data.slice(0, 6).map((poap: POAP) => (

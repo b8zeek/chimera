@@ -23,7 +23,7 @@ export function TechStackMarquee() {
 
 const Container = styled.div`
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `
 
 const Line = styled.div<{ lowerItem?: boolean }>`
@@ -51,6 +51,7 @@ const Tech = styled.p`
   vertical-align: top;
   line-height: 24px;
   font-size: 18px;
-  font-weight: 400;
+  font-family: Fjalla One;
+  font-weight: 300;
   margin-right: 10px;
 `

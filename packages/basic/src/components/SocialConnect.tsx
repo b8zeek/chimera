@@ -6,46 +6,65 @@ import { ReactComponent as GitHubLogoSVG } from '../assets/github-logo.svg'
 import { ReactComponent as TelegramLogoSVG } from '../assets/telegram-logo.svg'
 import { ReactComponent as WhatsAppLogoSVG } from '../assets/whatsapp-logo.svg'
 
-export function SocialConnect() {
+type SocialConnectProps = {
+  fill?: string
+  marginBottom?: string
+}
+
+export function SocialConnect({ fill, marginBottom }: SocialConnectProps) {
   return (
-    <Container>
-      <LinkedInLogo />
-      <TwitterLogo />
-      <GitHubLogo />
-      <TelegramLogo />
-      <WhatsAppLogo />
+    <Container marginBottom={marginBottom}>
+      <LinkedInLogo fill={fill} />
+      <TwitterLogo fill={fill} />
+      <GitHubLogo fill={fill} />
+      <TelegramLogo fill={fill} />
+      <WhatsAppLogo fill={fill} />
     </Container>
   )
 }
 
-const Container = styled.div`
+const Container = styled.div<SocialConnectProps>`
   width: 180px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 60px;
+  margin: 0 auto ${({ marginBottom }) => marginBottom || ''};
 `
 
-const LinkedInLogo = styled(LinkedInLogoSVG)`
+type FillProp = {
+  fill?: string
+}
+
+const LinkedInLogo = styled(LinkedInLogoSVG)<FillProp>`
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  ${({ fill }) => fill && `& rect { fill: ${fill}; }`}
 `
 
 const TwitterLogo = styled(TwitterLogoSVG)`
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  ${({ fill }) => fill && `& path { fill: ${fill}; }`}
 `
 
 const GitHubLogo = styled(GitHubLogoSVG)`
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  ${({ fill }) => fill && `& path { fill: ${fill}; }`}
 `
 
 const TelegramLogo = styled(TelegramLogoSVG)`
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  ${({ fill }) => fill && `& path { fill: ${fill}; }`}
 `
 
 const WhatsAppLogo = styled(WhatsAppLogoSVG)`
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  ${({ fill }) => fill && `& path { fill: ${fill}; }`}
 `

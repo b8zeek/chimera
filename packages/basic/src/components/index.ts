@@ -1,3 +1,4 @@
+export * from './Footer'
 export * from './Hero'
 export * from './Label'
 export * from './MainSection'

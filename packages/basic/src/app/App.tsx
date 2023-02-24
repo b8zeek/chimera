@@ -1,7 +1,7 @@
 import { PageLayout } from '@basic/components'
 import styled from 'styled-components'
 
-import { Hero, Label, MainSection, POAPsSection, SocialConnect, TechStackMarquee } from '../components'
+import { Footer, Hero, Label, MainSection, POAPsSection, SocialConnect, TechStackMarquee } from '../components'
 import { Heading, Paragraph } from '@basic/components'
 
 const mainSectionData = [
@@ -35,13 +35,14 @@ export function App() {
         <Paragraph width='300px' fontSize='16px' textAlign='center' marginBottom='20px'>
           My name is Mirko Basic. I am an experience technologist driving the adoption of blockchain.
         </Paragraph>
-        <SocialConnect />
+        <SocialConnect marginBottom='60px' />
         <MainSection {...mainSectionData[0]} />
         <TechStackMarquee />
         <MainSection {...mainSectionData[1]} />
         <MainSection {...mainSectionData[2]} />
         <POAPsSection />
       </Container>
+      <Footer />
     </PageLayout>
   )
 }

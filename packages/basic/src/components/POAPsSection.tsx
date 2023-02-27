@@ -37,7 +37,7 @@ export function POAPsSection() {
         Follow My Journey
       </SubHeading>
       <POAPsContainer>
-        {data.slice(0, 6).map((poap: POAP, index: number) => (
+        {data?.slice(0, 6).map((poap: POAP, index: number) => (
           <POAPToken key={poap.tokenId} src={poap.event.image_url} animationDelay={index * 0.1} />
         ))}
       </POAPsContainer>

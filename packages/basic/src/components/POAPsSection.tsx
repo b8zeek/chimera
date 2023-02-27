@@ -38,7 +38,7 @@ export function POAPsSection() {
       </SubHeading>
       <POAPsContainer>
         {data?.slice(0, 6).map((poap: POAP, index: number) => (
-          <POAPToken key={poap.tokenId} src={poap.event.image_url} animationDelay={index * 0.1} />
+          <POAPToken key={poap.tokenId} src={poap.event.image_url} animationDelay={index * 0.05} />
         ))}
       </POAPsContainer>
     </Container>
@@ -62,7 +62,7 @@ const PopAnimation = keyframes`
   }
 
   5% {
-    scale: 1.1;
+    scale: 1.15;
   }
 
   10% {
@@ -72,7 +72,8 @@ const PopAnimation = keyframes`
 
 const POAPToken = styled.img<{ animationDelay: number }>`
   width: 20%;
-  animation: 3s ${PopAnimation} ease-in-out infinite;
+  border-radius: 50%;
+  animation: 2s ${PopAnimation} ease-in-out infinite;
   animation-delay: ${({ animationDelay }) => animationDelay}s;
   margin-right: -4%;
 `

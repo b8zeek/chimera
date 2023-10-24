@@ -9,11 +9,11 @@ export function TechStackMarquee() {
       <Line />
       <Label>Tech Stack</Label>
       <Marquee speed={30} gradientColor={[250, 250, 250]} gradientWidth={100}>
-        {techStack.map(tech => (
-          <>
+        {techStack.map((tech, index) => (
+          <div key={index}>
             <Tech key={`dot-${tech}`}>•</Tech>
             <Tech key={tech}>{tech}</Tech>
-          </>
+          </div>
         ))}
       </Marquee>
       <Line lowerItem />

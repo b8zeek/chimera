@@ -16,7 +16,4 @@ const Container = styled.div`
   max-width: ${MAX_PAGE_WIDTH};
   min-height: 100vh;
   margin: 0 auto;
-
-  border-left: 1px solid #d36500;
-  border-right: 1px solid #d36500;
 `
